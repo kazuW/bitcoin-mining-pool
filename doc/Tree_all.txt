@@ -1,0 +1,4 @@
+doc/
+├── pool.md         # Poolクラスの関数解説
+├── stratum_server.md  # StratumServerクラスの関数解説
+└── README.md       # 全体の概要

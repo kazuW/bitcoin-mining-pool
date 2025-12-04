@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bitcoin-mining-pool"
+version = "0.1.0"
+description = ""
+authors = ["kazuW <35624002+kazuW@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "bitcoin_mining_pool"}]
+
+[tool.poetry.dependencies]
+python = "3.11.3"
+requests = "2.32.3"
+pyzmq = "26.4.0"
+asyncio = "3.4.3"
+configparser = "7.2.0"
+aiosqlite = "0.19.0"
+aiohttp = "^3.11.18"
+bech32 = "^1.2.0"
+base58 = "^2.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
