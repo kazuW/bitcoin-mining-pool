@@ -44,19 +44,7 @@ bitcoin-mining-pool
 │       └── operations.py      # Database operations
 ├── config
 │   └── config.ini             # Configuration file
-├── tests                      # Unit tests
-│   ├── __init__.py
-│   ├── test_stratum.py        # Tests for Stratum protocol
-│   ├── test_pool.py          # Tests for Pool class
-│   ├── test_coinbasetx.py    # Coinbase transaction tests
-│   ├── test_diff.py          # Difficulty tests
-│   └── test_script_pubkey.py # Script and pubkey tests
-├── ckpool_compatibility_test.py  # ckpool-solo compatibility validation
-├── stratum_protocol_test.py      # Stratum protocol implementation tests
-├── integration_test_suite.py     # Complete integration tests
-├── run_tests.py                   # Test runner for all tests
 ├── requirements.txt           # Required packages
-├── setup.py                   # Setup script
 └── README.md                  # Project documentation
 ```
 
@@ -75,42 +63,6 @@ bitcoin-mining-pool
 
 3. Configure the `config/config.ini` file with your Bitcoin Core RPC details and other settings.
 
-## Testing
-
-This mining pool includes a comprehensive test suite to ensure **100% compatibility with ckpool-solo**:
-
-### Quick Test
-Run all tests with the integrated test runner:
-```bash
-python run_tests.py
-```
-
-### Individual Test Categories
-
-1. **ckpool-solo Compatibility Test** (validates hash calculations):
-   ```bash
-   python run_tests.py --test compat
-   ```
-
-2. **Stratum Protocol Test** (validates protocol implementation):
-   ```bash
-   python run_tests.py --test stratum
-   ```
-
-3. **Complete Integration Test** (validates entire system):
-   ```bash
-   python run_tests.py --test integration
-   ```
-
-### Test Results Expected
-When all tests pass, you should see:
-```
-🎉 ALL TESTS PASSED!
-✅ Bitcoin Mining Pool is 100% compatible with ckpool-solo
-✅ Ready for production use with BitAxe miners
-✅ All hash calculations match ckpool-solo exactly
-✅ Stratum protocol fully implemented
-```
 
 ## Usage
 
